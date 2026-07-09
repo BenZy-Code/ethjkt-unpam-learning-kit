@@ -61,9 +61,9 @@ contract SimpleAMM {
     event LiquidityRemoved(address indexed lp, uint256 amountA, uint256 amountB, uint256 sharesBurned);
     event Swapped(address indexed user, address tokenIn, uint256 amountIn, uint256 amountOut);
 
-    constructor(address _tokenA, address _tokenB) {
-        tokenA = IERC20(_tokenA);
-        tokenB = IERC20(_tokenB);
+    constructor() {
+        tokenA = IERC20(0x7e7F85b5A5Dd95b08fcae8a7D74423E998FECD95);
+        tokenB = IERC20(0x9ebdC8ACc879a8284Ae5B3CecfbD280ec307aFA3);
     }
 
     // ---------- LIKUIDITAS ----------
